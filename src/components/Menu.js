@@ -12,8 +12,8 @@ export const Menu = () =>
             </ul>
 
             <ul className="nav pull-right top-menu">
-                <li><Link className="logout" to="/list-users" activeClassName="selected"><LoginIcon/> Login</Link></li>
-                <li><Link className="logout" to="/add-user" activeClassName="selected"><RegisterIcon/> Register</Link></li>
+                <li><Link className="logout" to="/register" activeClassName="selected"><RegisterIcon/> Register</Link></li>
+                <li><Link className="logout" to="/login" activeClassName="selected"><LoginIcon/> Login</Link></li>
             </ul>
         </div>
     </header>;

@@ -4,6 +4,7 @@ import {Component} from 'react'
 import {Menu} from "./Menu"
 import {UserList} from "./UserList"
 import {AddUserForm} from "./AddUserForm";
+import {LoginUserForm} from "./LoginUserForm";
 
 export class App extends Component {
     constructor(props) {
@@ -42,9 +43,9 @@ export class App extends Component {
                         <div className="row">
                             {(this.props.location.pathname === "/") ?
                                 <UserList users={this.state.allUsers}/> :
-                                (this.props.location.pathname === "/add-user") ?
+                                (this.props.location.pathname === "/register") ?
                                     <AddUserForm onNewUser={this.addUser}/> :
-                                    <UserList users={this.state.allUsers}/>
+                                    <LoginUserForm users={this.state.allUsers}/>
                             }
                         </div>
                     </section>

@@ -14,8 +14,8 @@ Window.React = React;
 render(
     <Router history={hashHistory}>
         <Route exact path="/" component={App}/>
-        <Route path="list-users" component={App}/>
-        <Route path="add-user" component={App}/>
+        <Route path="login" component={App}/>
+        <Route path="register" component={App}/>
         <Route path="*" component={Oops404}/>
     </Router>,
     document.getElementById('container'));
